@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Between the Lines Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Between the Lines Customer Satisfaction Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve our customer experience</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name:<input type="text" id="name" placeholder="full name" required /></label>
+        <label id="email-label">Email:<input type="email" id="email" placeholder="example@example.com" required /></label>
+        <label id="number-label">Age:<input type="number" id="number" min="16" max="120" pattern="[16-120]{8,}" placeholder="your age (years)"/></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="narrative" class="inline" id="name" value="fiction" /> Fiction</label>
+        <label><input type="radio" name="narrative" class="inline" id="name" value="non-fiction"/>Non-Fiction</label>
+        <label><input type="radio" name="narrative" class="inline" id="name" value="fictionnon-fiction"/>Fiction & Non-Fiction</label>
+      </fieldset>
+      <fieldset>
+        <p>Which genre of narrative did you purchase?<p>
+        <label><input type="checkbox" name="romance" class="inline" value="romance" required />Romance</label> 
+        <label><input type="checkbox" name="horror" class="inline" value="horror" required />Horror</label>
+        <label><input type="checkbox" name="thriller" class="inline" value="thriller" required />Thriller</label>
+        <label><input type="checkbox" name="fantasy" class="inline" value="fantasy" required />Fantasy</label>   
+        <label><input type="checkbox" name="sci-fi" class="inline" value="sci-fi" required />Sci-Fi</label> 
+        <label><input type="checkbox" name="action-adventure" class="inline" value="action-adventure" required />Action and Adventure</label> 
+      </fieldset>    
+      <fieldset>
+      <label>How easy was it to use our website?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Very Easy</option>
+        <option value="2">Easy</option>
+        <option value="3">Somewhat Easy</option>
+        <option value="4">Difficult</option>
+        <option value="5">Very Difficult</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label>How likely are you to recommend our bookstore to someone?
+        <select id="dropdown">
+          <option value="select">(select one)</option>
+          <option value="very likely">Very Likely</option>
+          <option value="likely">Likely</option>
+          <option value="unlikely">Unlikely</option>
+          <option value="very unlikely">Very Unlikely</option>
+        </select>
+        <textarea name="reason" rows="3" cols="30" placeholder="Please give a reason for your answer above..."></textarea>  
+        </label>    
+      </fieldset>  
+      <fieldset>
+      <label>Any comments or suggestions?
+          <textarea name="comment" rows="3" cols="30" placeholder="I enjoyed shopping on your website because..."></textarea>
+			  </label>
+      </fieldset>  
+      <fieldset>  
+      <label>Would you like to be added to our newsletter mailing list?
+      <input type="checkbox" name="yes" class="inline" value="yes" required />Yes</label>
+      <label><input type="checkbox" name="no" class="inline" value="no" required />No</label>   
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
